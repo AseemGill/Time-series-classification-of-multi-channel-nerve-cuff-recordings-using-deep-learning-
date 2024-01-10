@@ -1,0 +1,21 @@
+task_type = classification
+device = cuda
+nclasses = 3
+seq_len = 1500
+batch_size = 64
+input_size = 1500
+emb_size = 512
+nhead = 8
+nhid = 64
+nhid_tar = 1024
+nhid_task = 128
+nlayers = 2
+
+
+learning_rate = 0.001
+num_epochs = 150
+use_cuda = True
+early_stop = 3
+min_delta = -0.025
+min_epochs = 30
+num_workers = 8
